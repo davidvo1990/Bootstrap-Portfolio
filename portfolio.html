@@ -1,64 +1,80 @@
-<!doctype html>
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="assests/css/style.css" type="text/css">
+
 </head>
+<body class= "jumbotron p-2">
 
-<body>
+<!--Nav bar here-->
+<div id="container">
+    <div class= "row justify-content-center">
+      <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+<nav class="navbar p-0 navbar-expand-sm bg-light navbar-light sticky-top justify-content-between">
+  <a id="navhead" class="navbar-brand bg-warning text-center text-white p-4" href="portfolio.html">David Vo</a>
+  <ul class="navbar-nav p-1">
+    <li class="nav-item ">
+      <a id="link" class="nav-link" href="index.html">About</a>
+    </li>
+    <li class="nav-item ">
+      <a id="link" class="nav-link" href="contact.html">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a id="link" class="nav-link" href="portfolio.html">Portfolio</a>
+    </li>
+  </ul>
+</nav>
+
     </div>
-  </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
-
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
-
-        <h3>Word Guess</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
-
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
-      </div>
-
-    </section>
-
   </div>
+</div>
+<!--Main content of portfolio-->
 
-  <footer>
-    <div class="container">
-      Copyright &copy;
+<div id="main" class="jumbotron mt-5 bg-white container overflow-auto ">	
+ <div class= "row justify-content-center">
+  <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11">
+    <h1 class="w-100 border-bottom border-dark pb-3 text-warning">Portfolio</h1>
+<!-- content of main -->
+    <div id="portblock" class="float-left position-relative">
+        <img class="img-thumbnail" id="portimg" src="assests/images/hangman.jpg" alt="Word Guess">
+        <div class="h3 position-absolute bg-warning p-3 text-light mt-0 text-center bt-0" id="port">Word Guess</div>
     </div>
-  </footer>
-</body>
 
+    <div id="portblock" class="float-left position-relative">
+        <img class="img-thumbnail" id="portimg" src="assests/images/rpggame.jpg" alt="RPG Game">
+        <div class="h3 position-absolute bg-warning p-3 text-light mt-0 text-center bt-0" id="port">RPG Game</div>
+    </div>
+
+    <div id="portblock" class="float-left position-relative">
+        <img class="img-thumbnail" id="portimg" src="assests/images/triviagame.jpg" alt="Trivia Game">
+        <div class="h3 position-absolute bg-warning p-3 text-light mt-0 text-center bt-0" id="port">Trivia Game</div>
+    </div>
+    
+    <div id="portblock" class="float-left position-relative">
+        <img class="img-thumbnail" id="portimg" src="assests/images/widget.jpg" alt="Rutgers Info Widget">
+        <div class="h3 position-absolute bg-warning p-3 text-light mt-0 text-center bt-0" id="port">Rutgers Info Widget</div>
+    </div>
+
+    <div id="portblock" class="float-left position-relative">
+        <img class="img-thumbnail" id="portimg" src="assests/images/rps.jpg" alt="Rock Paper Scissors">
+        <div class="h3 position-absolute bg-warning p-3 text-light mt-0 text-center bt-0" id="port">Rock Paper Scissors</div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<div class="container">
+    <div class= "row justify-content-center flex-column align-self-end ">
+      <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+
+<footer class="p-2 text-center fixed-bottom bg-dark text-white">
+  Copyright &copy; 
+</footer>
+
+</body>
 </html>
